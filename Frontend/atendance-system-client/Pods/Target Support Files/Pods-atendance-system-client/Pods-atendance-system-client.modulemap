@@ -1,0 +1,6 @@
+framework module Pods_atendance_system_client {
+  umbrella header "Pods-atendance-system-client-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FC2FB3E8C4DD0DA7B02B4C0 /* Pods_atendance_system_client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6E5A252CFE2DFD1661767E /* Pods_atendance_system_client.framework */; };
+		6828F0C7234F20A200C2FC12 /* SubjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6828F0C6234F20A200C2FC12 /* SubjectVC.swift */; };
+		682C0E60236B08F300FB8C7D /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0E5F236B08F300FB8C7D /* Attendance.swift */; };
+		682C0E62236B0DF700FB8C7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0E61236B0DF700FB8C7D /* Constants.swift */; };
+		682C0E64236B6A1C00FB8C7D /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0E63236B6A1C00FB8C7D /* Login.swift */; };
+		682C0E66236BF9C000FB8C7D /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0E65236BF9C000FB8C7D /* SettingsVC.swift */; };
+		682C0E68236BFB5300FB8C7D /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0E67236BFB5200FB8C7D /* TimeTable.swift */; };
+		682C0E6A236BFDE000FB8C7D /* TimeTableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0E69236BFDE000FB8C7D /* TimeTableList.swift */; };
+		682C0E6C236C2A3700FB8C7D /* AttendanceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682C0E6B236C2A3700FB8C7D /* AttendanceList.swift */; };
+		6860F38C233B62F70047C7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860F38B233B62F70047C7A2 /* AppDelegate.swift */; };
+		6860F38E233B62F70047C7A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860F38D233B62F70047C7A2 /* SceneDelegate.swift */; };
+		6860F390233B62F70047C7A2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6860F38F233B62F70047C7A2 /* LoginVC.swift */; };
+		6860F393233B62F70047C7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6860F391233B62F70047C7A2 /* Main.storyboard */; };
+		6860F395233B63060047C7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6860F394233B63060047C7A2 /* Assets.xcassets */; };
+		6860F398233B63060047C7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6860F396233B63060047C7A2 /* LaunchScreen.storyboard */; };
+		68AF8D92234A72480050977E /* AttendanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AF8D91234A72480050977E /* AttendanceCell.swift */; };
+		68BB0EA123488B4900BFAF9C /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB0E8723488B4900BFAF9C /* HoshiTextField.swift */; };
+		68BB0EA423488B4900BFAF9C /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BB0E8A23488B4900BFAF9C /* TextFieldEffects.swift */; };
+		68DF62802348FB86001D8778 /* AttendanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF627F2348FB86001D8778 /* AttendanceVC.swift */; };
+		68DF62822348FBA1001D8778 /* TimeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF62812348FBA1001D8778 /* TimeTableVC.swift */; };
+		68DF62842348FE86001D8778 /* TTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DF62832348FE86001D8778 /* TTCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E449D3EECD55F44BF3F1178 /* Pods-atendance-system-client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atendance-system-client.release.xcconfig"; path = "Target Support Files/Pods-atendance-system-client/Pods-atendance-system-client.release.xcconfig"; sourceTree = "<group>"; };
+		3144ED1AC040BC65B00C16A6 /* Pods-atendance-system-client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atendance-system-client.debug.xcconfig"; path = "Target Support Files/Pods-atendance-system-client/Pods-atendance-system-client.debug.xcconfig"; sourceTree = "<group>"; };
+		6828F0C6234F20A200C2FC12 /* SubjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectVC.swift; sourceTree = "<group>"; };
+		682C0E5F236B08F300FB8C7D /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
+		682C0E61236B0DF700FB8C7D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		682C0E63236B6A1C00FB8C7D /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		682C0E65236BF9C000FB8C7D /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		682C0E67236BFB5200FB8C7D /* TimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
+		682C0E69236BFDE000FB8C7D /* TimeTableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableList.swift; sourceTree = "<group>"; };
+		682C0E6B236C2A3700FB8C7D /* AttendanceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceList.swift; sourceTree = "<group>"; };
+		6860F388233B62F70047C7A2 /* atendance-system-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "atendance-system-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6860F38B233B62F70047C7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6860F38D233B62F70047C7A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6860F38F233B62F70047C7A2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6860F392233B62F70047C7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6860F394233B63060047C7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6860F397233B63060047C7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6860F399233B63060047C7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AF8D91234A72480050977E /* AttendanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceCell.swift; sourceTree = "<group>"; };
+		68B69C41234F589400C08BD6 /* atendance-system-client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "atendance-system-client.entitlements"; sourceTree = "<group>"; };
+		68BB0E8623488B4900BFAF9C /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		68BB0E8723488B4900BFAF9C /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		68BB0E8A23488B4900BFAF9C /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		68DF627F2348FB86001D8778 /* AttendanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceVC.swift; sourceTree = "<group>"; };
+		68DF62812348FBA1001D8778 /* TimeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableVC.swift; sourceTree = "<group>"; };
+		68DF62832348FE86001D8778 /* TTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCell.swift; sourceTree = "<group>"; };
+		CE6E5A252CFE2DFD1661767E /* Pods_atendance_system_client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atendance_system_client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6860F385233B62F70047C7A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FC2FB3E8C4DD0DA7B02B4C0 /* Pods_atendance_system_client.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2220729178C6364FF99CA9E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E5A252CFE2DFD1661767E /* Pods_atendance_system_client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48F34C000EB61AA74CAA5FF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3144ED1AC040BC65B00C16A6 /* Pods-atendance-system-client.debug.xcconfig */,
+				1E449D3EECD55F44BF3F1178 /* Pods-atendance-system-client.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6860F37F233B62F70047C7A2 = {
+			isa = PBXGroup;
+			children = (
+				6860F38A233B62F70047C7A2 /* atendance-system-client */,
+				6860F389233B62F70047C7A2 /* Products */,
+				48F34C000EB61AA74CAA5FF7 /* Pods */,
+				2220729178C6364FF99CA9E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6860F389233B62F70047C7A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6860F388233B62F70047C7A2 /* atendance-system-client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6860F38A233B62F70047C7A2 /* atendance-system-client */ = {
+			isa = PBXGroup;
+			children = (
+				68B69C41234F589400C08BD6 /* atendance-system-client.entitlements */,
+				68BB0EB323488D6D00BFAF9C /* Model */,
+				68BB0EB223488D6700BFAF9C /* View */,
+				68BB0EB123488D5B00BFAF9C /* Controller */,
+				6860F38B233B62F70047C7A2 /* AppDelegate.swift */,
+				6860F38D233B62F70047C7A2 /* SceneDelegate.swift */,
+				6860F391233B62F70047C7A2 /* Main.storyboard */,
+				6860F394233B63060047C7A2 /* Assets.xcassets */,
+				6860F396233B63060047C7A2 /* LaunchScreen.storyboard */,
+				6860F399233B63060047C7A2 /* Info.plist */,
+			);
+			path = "atendance-system-client";
+			sourceTree = "<group>";
+		};
+		68BB0E8423488B4900BFAF9C /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				68BB0E8623488B4900BFAF9C /* TextFieldEffects.h */,
+				68BB0E8723488B4900BFAF9C /* HoshiTextField.swift */,
+				68BB0E8A23488B4900BFAF9C /* TextFieldEffects.swift */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		68BB0EB123488D5B00BFAF9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6860F38F233B62F70047C7A2 /* LoginVC.swift */,
+				68DF627F2348FB86001D8778 /* AttendanceVC.swift */,
+				68DF62812348FBA1001D8778 /* TimeTableVC.swift */,
+				6828F0C6234F20A200C2FC12 /* SubjectVC.swift */,
+				682C0E65236BF9C000FB8C7D /* SettingsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68BB0EB223488D6700BFAF9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68BB0E8423488B4900BFAF9C /* TextFieldEffects */,
+				68DF62832348FE86001D8778 /* TTCell.swift */,
+				68AF8D91234A72480050977E /* AttendanceCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68BB0EB323488D6D00BFAF9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				682C0E5F236B08F300FB8C7D /* Attendance.swift */,
+				682C0E63236B6A1C00FB8C7D /* Login.swift */,
+				682C0E61236B0DF700FB8C7D /* Constants.swift */,
+				682C0E67236BFB5200FB8C7D /* TimeTable.swift */,
+				682C0E69236BFDE000FB8C7D /* TimeTableList.swift */,
+				682C0E6B236C2A3700FB8C7D /* AttendanceList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6860F387233B62F70047C7A2 /* atendance-system-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6860F39C233B63060047C7A2 /* Build configuration list for PBXNativeTarget "atendance-system-client" */;
+			buildPhases = (
+				847527A42045A62FD9D55A05 /* [CP] Check Pods Manifest.lock */,
+				6860F384233B62F70047C7A2 /* Sources */,
+				6860F385233B62F70047C7A2 /* Frameworks */,
+				6860F386233B62F70047C7A2 /* Resources */,
+				7F7F6E09E7050598E11CED0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "atendance-system-client";
+			productName = "atendance-system-client";
+			productReference = 6860F388233B62F70047C7A2 /* atendance-system-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6860F380233B62F70047C7A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Raghav Vashisht";
+				TargetAttributes = {
+					6860F387233B62F70047C7A2 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 6860F383233B62F70047C7A2 /* Build configuration list for PBXProject "atendance-system-client" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6860F37F233B62F70047C7A2;
+			productRefGroup = 6860F389233B62F70047C7A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6860F387233B62F70047C7A2 /* atendance-system-client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6860F386233B62F70047C7A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6860F398233B63060047C7A2 /* LaunchScreen.storyboard in Resources */,
+				6860F395233B63060047C7A2 /* Assets.xcassets in Resources */,
+				6860F393233B62F70047C7A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F7F6E09E7050598E11CED0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-atendance-system-client/Pods-atendance-system-client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-atendance-system-client/Pods-atendance-system-client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-atendance-system-client/Pods-atendance-system-client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		847527A42045A62FD9D55A05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-atendance-system-client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6860F384233B62F70047C7A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682C0E60236B08F300FB8C7D /* Attendance.swift in Sources */,
+				682C0E6A236BFDE000FB8C7D /* TimeTableList.swift in Sources */,
+				682C0E68236BFB5300FB8C7D /* TimeTable.swift in Sources */,
+				68AF8D92234A72480050977E /* AttendanceCell.swift in Sources */,
+				682C0E64236B6A1C00FB8C7D /* Login.swift in Sources */,
+				68BB0EA423488B4900BFAF9C /* TextFieldEffects.swift in Sources */,
+				68DF62802348FB86001D8778 /* AttendanceVC.swift in Sources */,
+				6828F0C7234F20A200C2FC12 /* SubjectVC.swift in Sources */,
+				6860F390233B62F70047C7A2 /* LoginVC.swift in Sources */,
+				68DF62822348FBA1001D8778 /* TimeTableVC.swift in Sources */,
+				6860F38C233B62F70047C7A2 /* AppDelegate.swift in Sources */,
+				6860F38E233B62F70047C7A2 /* SceneDelegate.swift in Sources */,
+				68BB0EA123488B4900BFAF9C /* HoshiTextField.swift in Sources */,
+				68DF62842348FE86001D8778 /* TTCell.swift in Sources */,
+				682C0E6C236C2A3700FB8C7D /* AttendanceList.swift in Sources */,
+				682C0E62236B0DF700FB8C7D /* Constants.swift in Sources */,
+				682C0E66236BF9C000FB8C7D /* SettingsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6860F391233B62F70047C7A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6860F392233B62F70047C7A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6860F396233B63060047C7A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6860F397233B63060047C7A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6860F39A233B63060047C7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6860F39B233B63060047C7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6860F39D233B63060047C7A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3144ED1AC040BC65B00C16A6 /* Pods-atendance-system-client.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "atendance-system-client/atendance-system-client.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3BGLCCPGN;
+				INFOPLIST_FILE = "atendance-system-client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghavvashisht.atendance-system-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6860F39E233B63060047C7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E449D3EECD55F44BF3F1178 /* Pods-atendance-system-client.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "atendance-system-client/atendance-system-client.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3BGLCCPGN;
+				INFOPLIST_FILE = "atendance-system-client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghavvashisht.atendance-system-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6860F383233B62F70047C7A2 /* Build configuration list for PBXProject "atendance-system-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6860F39A233B63060047C7A2 /* Debug */,
+				6860F39B233B63060047C7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6860F39C233B63060047C7A2 /* Build configuration list for PBXNativeTarget "atendance-system-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6860F39D233B63060047C7A2 /* Debug */,
+				6860F39E233B63060047C7A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6860F380233B62F70047C7A2 /* Project object */;
+}
