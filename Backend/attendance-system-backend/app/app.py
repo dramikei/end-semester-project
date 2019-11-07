@@ -172,21 +172,14 @@ def markAttendance():
     timetable_id = 0
     isAttendanceOn = False
     isMacCorrect = False
-    data = db.session.query(Attendance).filter(Attendance.enrolment == enrolment).filter(Attendance.subject == subject).filter(Attendance.date == today).all()
+    data = db.session.query(Attendance).filter(Attendance.enrolment == enrolment).filter(Attendance.subject == subject).filter(Attendance.date == today).filter(Attendance.isattendanceon == "True").all()
     
     for attendance in data:
-        # Loop to check if attendance is on (i.e exists)
-        print("Attendance is on: ",attendance.isattendanceon)
-        if attendance.isattendanceon == "True" or attendance.isattendanceon == "true":
-            isAttendanceOn = True
+        isAttendanceOn = True
         timetable_id = attendance.table_id
-    print("Attendance is on: ",isAttendanceOn)
     if isAttendanceOn:
-        #check mac-address
-        print(isAttendanceOn)
         data = db.session.query(LectureHall).filter(LectureHall.table_id == timetable_id).all()
         for hall in data:
-            #Will only loop once
             macaddress = hall.macAddress.split(";")
             for mac in macaddress:
                 if macAddress == mac:
@@ -201,7 +194,6 @@ def markAttendance():
 
     if isMacCorrect:
         #Finally, mark attendance
-        
         try:
             db.session.query(Attendance).filter(Attendance.subject == subject).filter(Attendance.date == today).update({'ispresent':'True'})
             db.session.commit()
