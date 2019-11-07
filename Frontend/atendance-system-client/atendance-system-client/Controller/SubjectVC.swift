@@ -24,6 +24,7 @@ class SubjectVC: UIViewController, CLLocationManagerDelegate {
     
   
     var isAttendanceOn = false
+    var isPresent = false
     
     var totalAttendanceDataEntries = [PieChartDataEntry]()
     var context = LAContext()
@@ -71,7 +72,6 @@ class SubjectVC: UIViewController, CLLocationManagerDelegate {
                         AF.request(markAttendanceURL, method: .post, parameters: parameterData, encoder: JSONParameterEncoder.default, headers: nil, interceptor: nil).responseJSON { response in
                             guard let data = response.data else { return }
                             do {
-                                print(response)
                                 let decoder = JSONDecoder()
                                 let resultData = try decoder.decode(Login.self, from: data)
                                 if resultData.result == "Success" {
@@ -86,6 +86,7 @@ class SubjectVC: UIViewController, CLLocationManagerDelegate {
                                     alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
                                     self.present(alertController, animated: true, completion: nil)
                                 } else {
+                                    
                                     let alertController = UIAlertController(title: "Error!", message:
                                     "An internal server error has occurerd.\nPlease try again.", preferredStyle: .alert)
                                     alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
@@ -163,15 +164,21 @@ class SubjectVC: UIViewController, CLLocationManagerDelegate {
                     } else {
                         self.absentCount += 1
                     }
-                    if attendance.isOn == "True" || attendance.isOn == "true" {
+                    if (attendance.isOn == "True" || attendance.isOn == "true") {
                         self.isAttendanceOn = true
+                    }
+                    
+                    if (attendance.ispresent == "False" || attendance.ispresent == "false") {
+                        self.isPresent = false
+                    } else if (attendance.ispresent == "True" || attendance.ispresent == "true") {
+                        self.isPresent = true
                     }
                 }
                 self.setupChart()
                 self.updateChartData()
-                if self.isAttendanceOn {
+                if self.isAttendanceOn && self.isPresent == false {
                     self.markAttendanceBtn.isHidden = false
-                } else {
+                } else if self.isAttendanceOn == false || self.isPresent == true {
                     self.markAttendanceBtn.isHidden = true
                 }
             } catch let error {
